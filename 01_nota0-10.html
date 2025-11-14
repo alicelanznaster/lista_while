@@ -6,10 +6,12 @@
     */
 
     //ENTRADA
-
+    let nota = Number(prompt(`Insira uma nota de 0 a 10.`));
 
     //PROCESSAMENTO
-
+    while (nota < 1 || nota > 10) {
+        nota = Number(prompt(`Insira uma nota de 0 a 10.`));
+    }
 
     //SAÍDA
 

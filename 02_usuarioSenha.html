@@ -6,10 +6,13 @@
     */
 
     //ENTRADA
-
+    let usuario = prompt(`Informe seu usuário.`);
+    let senha = prompt(`Informe sua senha.`);
 
     //PROCESSAMENTO
-
+    while (usuario === senha) {
+        alert(`Erro! Sua senha não pode ser igual ao nome de usuário.`);
+    }
 
     //SAÍDA
 
