@@ -9,7 +9,8 @@
     let nota = Number(prompt(`Insira uma nota de 0 a 10.`));
 
     //PROCESSAMENTO
-    while (nota < 1 || nota > 10) {
+    while (nota < 0 || nota > 10) {
+        alert(`Erro! Valor inválido.`)
         nota = Number(prompt(`Insira uma nota de 0 a 10.`));
     }
 
