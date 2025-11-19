@@ -6,10 +6,22 @@
     */
 
     //ENTRADA
-    let senha = Number(prompt(`Insira uma senha formada por 4 números inteiros.`));
+    let senha = (prompt(`Informe uma senha formada por 4 números inteiros`));
+ 
     //PROCESSAMENTO
-    
+    while ((senha.length != 4) || 
+        (senha.includes(".")) || 
+        (senha.includes(",")) || 
+        (Number.isInteger(parseInt(senha)) == false) || 
+        (parseInt(senha).toString().length != 4)
+    )
+    {
+        alert("Senha Incorreta!");
+        senha = (prompt(`Informe uma senha formada por 4 números inteiros`));
+    }
 
-    //SAÍDA
+    alert(`Senha Correta`)
     
+    //SAÍDA
+
 </script>
