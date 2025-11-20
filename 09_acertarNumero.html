@@ -5,11 +5,18 @@
     */
 
     //ENTRADA
-
-
+    const aleatorio = Math.floor(Math.random() * 30) + 1;
+    let tentativa = Number(prompt(`Tente adivinhar um número de 1 a 30.`));
     //PROCESSAMENTO
-
+    while (aleatorio !== tentativa) {
+        if (tentativa > numeroSecreto) {
+            tentativa = Number(prompt("Menor!"));
+        } else {
+            tentativa = Number(prompt("Maior!"));
+        }
+    }
 
     //SAÍDA
+    document.write(`Acertou, parabéns!`);
     
 </script>
