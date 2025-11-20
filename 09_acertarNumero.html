@@ -9,10 +9,10 @@
     let tentativa = Number(prompt(`Tente adivinhar um número de 1 a 30.`));
     //PROCESSAMENTO
     while (aleatorio !== tentativa) {
-        if (tentativa > numeroSecreto) {
-            tentativa = Number(prompt("Menor!"));
+        if (tentativa > aleatorio) {
+            tentativa = Number(prompt(`Menor!`));
         } else {
-            tentativa = Number(prompt("Maior!"));
+            tentativa = Number(prompt(`Maior!`));
         }
     }
 

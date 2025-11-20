@@ -15,10 +15,10 @@
     //PROCESSAMENTO
     while (numero != 0) {
         digito = numero % 10;
-        numInvertido = numeroinvertido * 10 + digito;
-        numero = Math.floor(numero / 10);
+        numInvertido = numInvertido * 10 + digito;
+        numero = Math.floor( numero / 10);
     }
 
         //SAÍDA
-    document.write(`O seu número invertido fica ${numeroinvertido}`);
+    document.write(`O seu número invertido é ${numInvertido}.`);
     </script>
